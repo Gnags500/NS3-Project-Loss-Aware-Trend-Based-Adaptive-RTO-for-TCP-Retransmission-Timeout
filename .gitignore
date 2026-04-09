@@ -19,3 +19,7 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Allow your contrib module
+!contrib/improved-rto2/
+!report
