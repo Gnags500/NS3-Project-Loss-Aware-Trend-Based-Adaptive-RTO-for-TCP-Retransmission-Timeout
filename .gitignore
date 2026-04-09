@@ -1,0 +1,21 @@
+# Ignore build artifacts
+build/
+*.o
+*.out
+*.so
+*.a
+*.lib
+
+# Ignore simulation outputs
+*.pcap
+*.tr
+*.log
+*.xml
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
