@@ -175,19 +175,8 @@ Detailed graphs and tables are available in the project report.
 
 | Issue                          | Likely solution                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------|
-| `NS_ASSERT(m_connected)` fails | Use UDP in wireless scenarios, or increase application start delay (`t=5` s).  |
-| No CSV output                  | Ensure the `results/` directory exists and the script has write permissions.    |
 | Build errors about missing headers | Check that `src/improved-rto/model/rtt-proposed.h` is correctly included in `CMakeLists.txt`. |
 | Memory exhausted during sweep  | Reduce simulation time to 30 s, or run fewer parameter combinations at once.    |
-
----
-
-## Future Work (as identified in the report)
-
-- **Controlled congestion** – add a RateErrorModel or reduce bottleneck bandwidth to force more RTO events.
-- **TCP over wireless** – pre‑populate AODV routes or use a different routing protocol to enable TCP in wireless scenarios.
-- **Mobility** – introduce RandomWaypoint to stress RTO estimators with link fluctuations.
-- **Gamma sweep** – systematically vary \(\gamma\) (0, 0.1, 0.25, 0.5, 1.0, 2.0) under controlled loss.
 
 ---
 
